@@ -1,6 +1,51 @@
-Script started on 2026-08-25 08:45:40-03:00 [TERM="xterm-256color" TTY="/dev/cons0" COLUMNS="118" LINES="6"]
-[?2004hsh-5.3$ exit
+Script started on 2026-08-26 08:09:28-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="118" LINES="6"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ date
 [?2004l
-exit
+Wed Aug 26 08:09:37 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd
+[?2004l
+/home/danie/Threads
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami
+[?2004l
+danie
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004l
+exitScript started on 2026-08-26 09:05:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="118" LINES="6"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ date pwd[K[K[K[K; pwd; wo[Khoami
+[?2004lWed Aug 26 09:05:19 -03 2026
+/home/danie/Threads
+danie
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads
+[01m[Kmain.c:[m[K In function ‘[01m[Kcalculo_mandelbrot[m[K’:
+[01m[Kmain.c:7:23:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+    7 |     printf("%f %f %d [01;35m[K%d[m[K", largura, altura, max_iter, [32m[Kthreads[m[K);
+      |                      [01;35m[K~^[m[K                              [32m[K~~~~~~~[m[K
+      |                       [01;35m[K|[m[K                              [32m[K|[m[K
+      |                       [01;35m[Kint[m[K                            [32m[Klong int[m[K
+      |                      [32m[K%ld[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:21:20:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kstrtoint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   21 |     int max_iter = [01;35m[Kstrtoint[m[K(argv[3],&receber);
+      |                    [01;35m[K^~~~~~~~[m[K
+[01m[Kmain.c:22:20:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kstrtol[m[K’
+   22 |     long threads = [01;31m[Kstrtol[m[K(argv[4],&receber);
+      |                    [01;31m[K^~~~~~[m[K
+In file included from [01m[Kmain.c:2[m[K:
+[01m[K/usr/include/stdlib.h:177:17:[m[K [01;36m[Knote: [m[Kdeclared here
+  177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
+      |                 [01;36m[K^~~~~~[m[K
+make: *** [Makefile:2: all] Error 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads
+./threads 1 1 1 1
+1.000000 1.000000 1 1[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make ce[Klean
+[?2004lrm -f threads
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ mak [Ke compile
+[?2004lgcc main.c -o threads
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ .t[K/threads 2 4
+[?2004lMenos argumentos do que requisitado[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ e[Kclear
+[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
 
-Script done on 2026-08-25 08:45:42-03:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-08-26 09:08:59-03:00 [COMMAND_EXIT_CODE="0"]
