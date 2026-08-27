@@ -82,3 +82,47 @@ make: *** [Makefile:11: clean] Error 127
 [?2004lexit
 
 Script done on 2026-08-26 15:42:39-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-27 09:20:00-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami pwd [K[K[K[K[K[Ki; pwd; date
+[?2004ldanie
+/home/danie/Threads
+Thu Aug 27 09:20:10 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads -lpthread
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_serial[m[K’:
+[01m[Kmain.c:45:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kiter[m[K’ undeclared (first use in this function)
+   45 |             matriz_iter[i * largura + y] = [01;31m[Kiter[m[K;
+      |                                            [01;31m[K^~~~[m[K
+[01m[Kmain.c:45:44:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kanotar_timer[m[K’:
+[01m[Kmain.c:63:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Knome[m[K’
+   63 |     fprintf[34m[K([m[KtFile,"%s: %d segundos\n"[01;31m[K [m[K[32m[Knome[m[K, 12);
+      |            [34m[K~[m[K                         [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                                      [32m[K)[m[K
+[01m[Kmain.c:63:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar *[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   63 |     fprintf(tFile,"[01;35m[K%s[m[K: %d segundos\n" nome, 12);
+      |                    [01;35m[K~^[m[K
+      |                     [01;35m[K|[m[K
+      |                     [01;35m[Kchar *[m[K
+[01m[Kmain.c:63:25:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   63 |     fprintf(tFile,"%s: [01;35m[K%d[m[K segundos\n" nome, 12);
+      |                        [01;35m[K~^[m[K
+      |                         [01;35m[K|[m[K
+      |                         [01;35m[Kint[m[K
+make: *** [Makefile:5: all] Error 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads -lpthread
+./threads 1 1 1 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads -lpthread
+./threads 800 800 1000 4
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc main.c -o threads -lpthread
+./threads 800 800 1000 4
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clean[Kr
+[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-27 09:26:27-03:00 [COMMAND_EXIT_CODE="0"]

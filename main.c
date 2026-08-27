@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <omp.h>
+#include <time.h>
 
-float calculo_mandelbrot(float largura, float altura, long max_iter, long threads){
-    printf("%f %f %ld %ld\n", largura, altura, max_iter, threads);
-    return 2.0;
-}
+#define REAL_MAX 2.0
+#define REAL_MIN -2.0
+#define IMAG_MAX 1.5
+#define IMAG_MIN -1.5
 
 void processo_pthread(float basico){
     FILE *file = fopen("mandelbrot_dsob_pthreads1.pgm", "w");
@@ -22,10 +23,45 @@ void processo_openmp(float basico){
     return;
 }
 
-void processo_serial(float basico){
+void processo_serial(long largura,long altura,long max_iter,long threads){
     FILE *file = fopen("mandelbrot_dsob_serial.pgm", "w");
+    long *matriz_iter = malloc(largura*altura*sizeof(long));
 
-    fprintf(file, "%f", basico);
+    for(long i=0; i<altura; i++){
+        for(long y=0; y<largura; y++){
+            float real = REAL_MIN + ((float)y / (float)largura) * (REAL_MAX - REAL_MIN);
+            float imaginario = IMAG_MIN + ((float)i / (float)altura) * (IMAG_MAX - IMAG_MIN);
+
+            float z_real = 0.0, z_imag = 0.0;
+            long iter_atual = 0;
+
+            while (z_real * z_real + z_imag * z_imag <= 4.0 && iter_atual < max_iter) {
+                float z_real_temp = z_real * z_real - z_imag* z_imag + real;
+                z_imag = 2.0 * z_real * z_imag + imaginario;
+                z_real = z_real_temp;
+                iter_atual++;
+            }
+
+            matriz_iter[i * largura + y] = iter_atual;
+
+        }
+    }
+    for (long i = 0; i < altura; i++) {
+        for (long y = 0; y < largura; y++) {
+            long inten = (matriz_iter[i * largura + y] * 255) / max_iter;
+            fprintf(file, "%ld ", inten);
+        }
+        fprintf(file, "\n");
+    }
+    fclose(file);
+    free(matriz_iter);
+    return;
+}
+
+void anotar_timer(char nome[16]){
+    FILE *tFile = fopen("timer.txt", "w");
+
+    fclose(tFile);
     return;
 }
 
@@ -41,11 +77,9 @@ int main(int argc, char **argv){
     long max_iter = strtol(argv[3],&receber, 10);
     long threads = strtol(argv[4],&receber, 10);
 
-    float basico = calculo_mandelbrot(largura, altura, max_iter, threads);
-
-    processo_serial(basico);
-    processo_openmp(basico);
-    processo_pthread(basico);
+    processo_serial(largura, altura, max_iter, threads);
+    processo_openmp(2.0);
+    processo_pthread(2.0);
 
     return 0;
 }
