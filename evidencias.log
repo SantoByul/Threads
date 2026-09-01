@@ -241,3 +241,18 @@ Teste da Thread 2 no 'momento' 7
 [?2004lexit
 
 Script done on 2026-09-01 17:10:05-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-01 17:42:22-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami; pwd; date
+[?2004ldanie
+/home/danie/Threads
+Tue Sep  1 17:42:26 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o threads -lpthread
+./threads 800 800 1000 4
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ maek[K[Kke clean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-01 17:44:53-03:00 [COMMAND_EXIT_CODE="0"]

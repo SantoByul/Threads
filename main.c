@@ -19,16 +19,33 @@ void processo_pthread(float basico){
 void processo_openmp(long largura,long altura,long max_iter, long threads){
     FILE *file = fopen("mandelbrot_dsob_openmp.pgm", "w");
     long *matriz_iter = malloc(largura*altura*sizeof(long));
-    int soma = 0;
 
-    #pragma omp parallel for num_threads(threads) reduction(+:soma)
-    for (long i=0; i<10; i++){
-        for(long j=0; j<10; j++){
-            printf("Teste da Thread %d no 'momento' %ld\n", omp_get_thread_num(), i);
-            soma++;
+    #pragma omp parallel for num_threads(threads)
+    for (long i=0; i<altura; i++){
+        for(long j=0; j<largura; j++){
+            float real = REAL_MIN + ((float)j / (float)largura) * (REAL_MAX - REAL_MIN);
+            float imaginario = IMAG_MIN + ((float)i / (float)altura) * (IMAG_MAX - IMAG_MIN);
+
+            float z_real = 0.0, z_imag = 0.0;
+            long iter_atual = 0;
+
+            while (z_real * z_real + z_imag * z_imag <= 4.0 && iter_atual < max_iter) {
+                float z_real_temp = z_real * z_real - z_imag* z_imag + real;
+                z_imag = 2.0 * z_real * z_imag + imaginario;
+                z_real = z_real_temp;
+                iter_atual++;
+            }
+
+            matriz_iter[i * largura + j] = iter_atual;
         }
     }
-    fprintf(file, "Teste finalizado e resultado é: %d\n", soma);
+    for (long i = 0; i < altura; i++) {
+        for (long y = 0; y < largura; y++) {
+            long inten = (matriz_iter[i * largura + y] * 255) / max_iter;
+            fprintf(file, "%ld ", inten);
+        }
+        fprintf(file, "\n");
+    }
     fclose(file);
     free(matriz_iter);
     return;
