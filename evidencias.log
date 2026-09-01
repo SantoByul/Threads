@@ -126,3 +126,118 @@ make: *** [Makefile:5: all] Error 1
 [?2004lexit
 
 Script done on 2026-08-27 09:26:27-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-01 17:09:09-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd[Kd; whoami; date
+[?2004l/home/danie/Threads
+danie
+Tue Sep  1 17:09:15 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o threads -lpthread
+./threads 800 800 1000 4
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 0
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 1
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 0 no 'momento' 2
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 3
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 4
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 1 no 'momento' 5
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 8
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 3 no 'momento' 9
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 6
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+Teste da Thread 2 no 'momento' 7
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-01 17:10:05-03:00 [COMMAND_EXIT_CODE="0"]

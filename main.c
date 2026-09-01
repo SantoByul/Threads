@@ -16,14 +16,25 @@ void processo_pthread(float basico){
     return;
 }
 
-void processo_openmp(float basico){
+void processo_openmp(long largura,long altura,long max_iter, long threads){
     FILE *file = fopen("mandelbrot_dsob_openmp.pgm", "w");
-    
-    fprintf(file, "%f", basico);
+    long *matriz_iter = malloc(largura*altura*sizeof(long));
+    int soma = 0;
+
+    #pragma omp parallel for num_threads(threads) reduction(+:soma)
+    for (long i=0; i<10; i++){
+        for(long j=0; j<10; j++){
+            printf("Teste da Thread %d no 'momento' %ld\n", omp_get_thread_num(), i);
+            soma++;
+        }
+    }
+    fprintf(file, "Teste finalizado e resultado é: %d\n", soma);
+    fclose(file);
+    free(matriz_iter);
     return;
 }
 
-void processo_serial(long largura,long altura,long max_iter,long threads){
+void processo_serial(long largura,long altura,long max_iter){
     FILE *file = fopen("mandelbrot_dsob_serial.pgm", "w");
     long *matriz_iter = malloc(largura*altura*sizeof(long));
 
@@ -77,9 +88,8 @@ int main(int argc, char **argv){
     long max_iter = strtol(argv[3],&receber, 10);
     long threads = strtol(argv[4],&receber, 10);
 
-    processo_serial(largura, altura, max_iter, threads);
-    processo_openmp(2.0);
-    processo_pthread(2.0);
+    processo_serial(largura, altura, max_iter);
+    processo_openmp(largura, altura, max_iter, threads);
 
     return 0;
 }
