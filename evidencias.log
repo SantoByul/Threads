@@ -401,3 +401,64 @@ Thread 134524469081792 Altura 800; largura 800; Maxima Iterações 1000
 [?2004lexit
 
 Script done on 2026-09-02 10:04:35-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 12:12:41-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd; whoami; date
+[?2004l/home/danie/Threads
+danie
+Wed Sep  2 12:12:45 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[01m[Kmain.c:[m[K In function ‘[01m[Kajuste_thread2[m[K’:
+[01m[Kmain.c:100:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Karg_print[m[K’; did you mean ‘[01m[Kargs_print[m[K’?
+  100 |     [01;31m[Karg_print[m[K *a = (args_print *)arg;
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kargs_print[m[K
+[01m[Kmain.c:100:20:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[Kargs_print *[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  100 |     arg_print *a = [01;35m[K([m[Kargs_print *)arg;
+      |                    [01;35m[K^[m[K
+[01m[Kmain.c:102:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfim[m[K’ in something not a structure or union
+  102 |     size_t capacidade = (size_t)(a[01;31m[K->[m[Kfim - a->inicio) * a->largura * 4 + (size_t)(a->fim - a->inicio) + 1;
+      |                                   [01;31m[K^~[m[K
+[01m[Kmain.c:102:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinicio[m[K’ in something not a structure or union
+  102 |     size_t capacidade = (size_t)(a->fim - a[01;31m[K->[m[Kinicio) * a->largura * 4 + (size_t)(a->fim - a->inicio) + 1;
+      |                                            [01;31m[K^~[m[K
+[01m[Kmain.c:102:57:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klargura[m[K’ in something not a structure or union
+  102 |     size_t capacidade = (size_t)(a->fim - a->inicio) * a[01;31m[K->[m[Klargura * 4 + (size_t)(a->fim - a->inicio) + 1;
+      |                                                         [01;31m[K^~[m[K
+[01m[Kmain.c:102:83:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfim[m[K’ in something not a structure or union
+  102 |     size_t capacidade = (size_t)(a->fim - a->inicio) * a->largura * 4 + (size_t)(a[01;31m[K->[m[Kfim - a->inicio) + 1;
+      |                                                                                   [01;31m[K^~[m[K
+[01m[Kmain.c:102:92:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinicio[m[K’ in something not a structure or union
+  102 |     size_t capacidade = (size_t)(a->fim - a->inicio) * a->largura * 4 + (size_t)(a->fim - a[01;31m[K->[m[Kinicio) + 1;
+      |                                                                                            [01;31m[K^~[m[K
+[01m[Kmain.c:106:20:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kinicio[m[K’ in something not a structure or union
+  106 |     for (long i = a[01;31m[K->[m[Kinicio; i < a->fim; i++){
+      |                    [01;31m[K^~[m[K
+[01m[Kmain.c:106:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfim[m[K’ in something not a structure or union
+  106 |     for (long i = a->inicio; i < a[01;31m[K->[m[Kfim; i++){
+      |                                   [01;31m[K^~[m[K
+[01m[Kmain.c:107:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klargura[m[K’ in something not a structure or union
+  107 |         for (long y = 0; y < a[01;31m[K->[m[Klargura; y++){
+      |                               [01;31m[K^~[m[K
+[01m[Kmain.c:108:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kmatriz_iter[m[K’ in something not a structure or union
+  108 |             long inten = (a[01;31m[K->[m[Kmatriz_iter[i * a->largura + y] * 255) / a->max_iter;
+      |                            [01;31m[K^~[m[K
+[01m[Kmain.c:108:47:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klargura[m[K’ in something not a structure or union
+  108 |             long inten = (a->matriz_iter[i * a[01;31m[K->[m[Klargura + y] * 255) / a->max_iter;
+      |                                               [01;31m[K^~[m[K
+[01m[Kmain.c:108:72:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kmax_iter[m[K’ in something not a structure or union
+  108 |             long inten = (a->matriz_iter[i * a->largura + y] * 255) / a[01;31m[K->[m[Kmax_iter;
+      |                                                                        [01;31m[K^~[m[K
+[01m[Kmain.c:114:6:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbuffer[m[K’ in something not a structure or union
+  114 |     a[01;31m[K->[m[Kbuffer = buffer;
+      |      [01;31m[K^~[m[K
+make: *** [Makefile:6: all] Error 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+./mandelbrot 800 800 1000 4
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 12:17:02-03:00 [COMMAND_EXIT_CODE="0"]
