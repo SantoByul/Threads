@@ -256,3 +256,148 @@ Tue Sep  1 17:42:26 -03 2026
 [?2004lexit
 
 Script done on 2026-09-01 17:44:53-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 09:53:10-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami. pwd[K[K[K[K[K; pwd; date
+[?2004ldanie
+/home/danie/Threads
+Wed Sep  2 09:53:15 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[01m[Kmain.c:[m[K In function ‘[01m[Kprint_pthread1[m[K’:
+[01m[Kmain.c:38:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
+   38 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:34:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   34 | void [01;36m[Kprint_pthread1[m[K(long *matriz, long altura, long largura, long max_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:50:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kmatriz_iter[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kmax_iter[m[K’?
+   50 |     free([01;31m[Kmatriz_iter[m[K);
+      |          [01;31m[K^~~~~~~~~~~[m[K
+      |          [32m[Kmax_iter[m[K
+[01m[Kmain.c:50:10:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_pthread2[m[K’:
+[01m[Kmain.c:58:16:[m[K [01;35m[Kwarning: [m[Kreturning ‘[01m[Kint[m[K’ from a function with return type ‘[01m[Kvoid *[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   58 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
+   62 |     [01;35m[Kreturn[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[01m[Kmain.c:54:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   54 | void *[01;36m[Kprocesso_pthread2[m[K(float basico){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_openmp[m[K’:
+[01m[Kmain.c:69:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
+   69 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:65:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   65 | void [01;36m[Kprocesso_openmp[m[K(long largura,long altura,long max_iter, long threads, long *matriz_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_serial[m[K’:
+[01m[Kmain.c:107:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
+  107 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:103:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  103 | void [01;36m[Kprocesso_serial[m[K(long largura,long altura,long max_iter, long *matriz_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kanotar_timer[m[K’:
+[01m[Kmain.c:145:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
+  145 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:141:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  141 | void [01;36m[Kanotar_timer[m[K(char nome[16]){
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:168:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kmatriz_iter[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kmax_iter[m[K’?
+  168 |     a1.matriz_iter = [01;31m[Kmatriz_iter[m[K;
+      |                      [01;31m[K^~~~~~~~~~~[m[K
+      |                      [32m[Kmax_iter[m[K
+[01m[Kmain.c:174:5:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kprocesso_serial[m[K’
+  174 |     [01;31m[Kprocesso_serial[m[K(largura, altura, max_iter);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:103:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  103 | void [01;36m[Kprocesso_serial[m[K(long largura,long altura,long max_iter, long *matriz_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:175:5:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kprocesso_openmp[m[K’
+  175 |     [01;31m[Kprocesso_openmp[m[K(largura, altura, max_iter, threads);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:65:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   65 | void [01;36m[Kprocesso_openmp[m[K(long largura,long altura,long max_iter, long threads, long *matriz_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:6: all] Error 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[01m[Kmain.c:[m[K In function ‘[01m[Kprint_pthread1[m[K’:
+[01m[Kmain.c:38:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
+   38 |         return [01;35m[K1[m[K;
+      |                [01;35m[K^[m[K
+[01m[Kmain.c:34:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   34 | void [01;36m[Kprint_pthread1[m[K(long *matriz, long altura, long largura, long max_iter){
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:50:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kmatriz_iter[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kmax_iter[m[K’?
+   50 |     free([01;31m[Kmatriz_iter[m[K);
+      |          [01;31m[K^~~~~~~~~~~[m[K
+      |          [32m[Kmax_iter[m[K
+[01m[Kmain.c:50:10:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_pthread2[m[K’:
+[01m[Kmain.c:58:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
+   58 |         [01;35m[Kreturn[m[K;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Kmain.c:54:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   54 | void *[01;36m[Kprocesso_pthread2[m[K(float basico){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
+   62 |     [01;35m[Kreturn[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[01m[Kmain.c:54:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   54 | void *[01;36m[Kprocesso_pthread2[m[K(float basico){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:6: all] Error 1
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_pthread2[m[K’:
+[01m[Kmain.c:57:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
+   57 |         [01;35m[Kreturn[m[K;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Kmain.c:53:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 | void *[01;36m[Kprocesso_pthread2[m[K(float basico){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:61:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
+   61 |     [01;35m[Kreturn[m[K;
+      |     [01;35m[K^~~~~~[m[K
+[01m[Kmain.c:53:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 | void *[01;36m[Kprocesso_pthread2[m[K(float basico){
+      |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+./mandelbrot 800 800 1000 4
+Thread 134108654180032 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134108541875904 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134108645787328 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134108637394624 Altura 800; largura 800; Maxima Iterações 1000
+double free or corruption (out)
+make: *** [Makefile:7: all] Aborted (core dumped)
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make[K[K[K[Kmake all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+./mandelbrot 800 800 1000 4
+Thread 139259255297728 Altura 800; largura 800; Maxima Iterações 1000
+double free or corruption (out)
+Thread 139259246905024 Altura 800; largura 800; Maxima Iterações 1000
+make: *** [Makefile:7: all] Aborted (core dumped)
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+./mandelbrot 800 800 1000 4
+Thread 126945800066752 Altura 800; largura 800; Maxima Iterações 1000
+double free or corruption (out)
+Thread 126945791674048 Altura 800; largura 800; Maxima Iterações 1000
+make: *** [Makefile:7: all] Aborted (core dumped)
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+./mandelbrot 800 800 1000 4
+Thread 134524485867200 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134524477474496 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134524348397248 Altura 800; largura 800; Maxima Iterações 1000
+Thread 134524469081792 Altura 800; largura 800; Maxima Iterações 1000
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 10:04:35-03:00 [COMMAND_EXIT_CODE="0"]

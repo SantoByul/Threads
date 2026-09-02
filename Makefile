@@ -1,12 +1,13 @@
 
-REMOVE = threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+GCC = gcc -fopenmp
+REMOVE = threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
 
 all:
-	gcc -fopenmp main.c -o threads -lpthread
-	./threads 800 800 1000 4
+	$(GCC) main.c -o mandelbrot -lpthread
+	./mandelbrot 800 800 1000 4
 
 compile:
-	gcc -fopenmp main.c -o threads -lpthread
+	$(GCC) main.c -o mandelbrot -lpthread
 
 clean:
 	rm -f $(REMOVE)
