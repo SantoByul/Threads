@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
+#include <ctype.h>
 #include <pthread.h>
 #include <omp.h>
 #include <time.h>
@@ -28,6 +30,9 @@ typedef struct{
 
 void *processo_pthread1(void *arg){
     args_pthread *a = (args_pthread *)arg;
+    if (a == NULL){
+        return NULL;
+    }
     long largura = a->largura;
     long altura = a->altura;
     long max_iter = a->max_iter;
@@ -98,6 +103,9 @@ long *processo_pthread2(long largura,long altura,long max_iter, long *matriz_ite
 
 void *ajuste_thread2(void *arg){
     args_print *a = (args_print *)arg;
+    if(a == NULL){
+        return NULL;
+    }
 
     size_t capacidade = (size_t)(a->fim - a->inicio) * a->largura * 4 + (size_t)(a->fim - a->inicio) + 1;
     char *buffer = malloc(capacidade);
@@ -200,6 +208,46 @@ void anotar_timer(char nome[16]){
     return;
 }
 
+int verificar_float(char *str, float *saida){
+    char *receber;
+    errno = 0;
+    *saida = strtof(str,&receber);
+
+    if(receber == str){
+        return 0;
+    }
+    while(*receber !='\0'){
+        if(!isspace((unsigned char)*receber)){
+            return 0;
+        }
+        receber++;
+    }
+    if(errno == ERANGE){
+        return 0;
+    }
+    return 1;
+}
+
+int verificar_long(char *str, long *saida){
+    char *receber;
+    errno = 0;
+    *saida = strtof(str,&receber);
+
+    if(receber == str){
+        return 0;
+    }
+    while(*receber !='\0'){
+        if(!isspace((unsigned char)*receber)){
+            return 0;
+        }
+        receber++;
+    }
+    if(errno == ERANGE){
+        return 0;
+    }
+    return 1;
+}
+
 int main(int argc, char **argv){
     if (argc < 5){
         printf("Menos argumentos do que requisitado");
@@ -207,12 +255,30 @@ int main(int argc, char **argv){
     }
     args_pthread a1;
 
-    char *receber;
-    float largura = strtof(argv[1],&receber);
-    float altura = strtof(argv[2],&receber);
-    long max_iter = strtol(argv[3],&receber, 10);
-    long threads = strtol(argv[4],&receber, 10);
+    float largura, altura;
+    long max_iter, threads;
+
+    if(!verificar_float(argv[1],&largura)){
+        printf("Argumento da Largura invalido\n");
+        return 1;
+    }
+    if(!verificar_float(argv[2],&altura)){
+        printf("Argumento da Altura invalido\n");
+        return 1;
+    }
+    if(!verificar_long(argv[3],&max_iter)){
+        printf("Argumento das Iterações Maximas invalido\n");
+        return 1;
+    }
+    if(!verificar_long(argv[4],&threads)){
+        printf("Argumento de Threads invalido\n");
+        return 1;
+    }
     long *matriz_iter = malloc(largura*altura*sizeof(long));
+    if(matriz_iter == NULL){
+        printf("Erro na alocação de memoria");
+        return 1;
+    }
 
     a1.largura = largura;
     a1.altura = altura;

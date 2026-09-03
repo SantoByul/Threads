@@ -12,11 +12,13 @@ danie
 [?2004l
 exitScript started on 2026-08-26 09:05:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="118" LINES="6"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ date pwd[K[K[K[K; pwd; wo[Khoami
-[?2004lWed Aug 26 09:05:19 -03 2026
+[?2004l
+Wed Aug 26 09:05:19 -03 2026
 /home/danie/Threads
 danie
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads
+[?2004l
+gcc main.c -o threads
 [01m[Kmain.c:[m[K In function ‘[01m[Kcalculo_mandelbrot[m[K’:
 [01m[Kmain.c:7:23:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
     7 |     printf("%f %f %d [01;35m[K%d[m[K", largura, altura, max_iter, [32m[Kthreads[m[K);
@@ -36,59 +38,96 @@ In file included from [01m[Kmain.c:2[m[K:
   177 | extern long int [01;36m[Kstrtol[m[K (const char *__restrict __nptr,
       |                 [01;36m[K^~~~~~[m[K
 make: *** [Makefile:2: all] Error 1
-[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ [K]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 
+[K
+]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004l
+gcc main.c -o threads
 ./threads 1 1 1 1
 1.000000 1.000000 1 1[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make ce[Klean
-[?2004lrm -f threads
+[?2004l
+rm -f threads
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ mak [Ke compile
-[?2004lgcc main.c -o threads
+[?2004l
+gcc main.c -o threads
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ .t[K/threads 2 4
-[?2004lMenos argumentos do que requisitado[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ e[Kclear
-[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+Menos argumentos do que requisitado[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ e[Kclear
+[?2004l
+[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004l
+exit
 
 Script done on 2026-08-26 09:08:59-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-08-26 15:36:18-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami/[K; date; pwd
-[?2004ldanie
+[?2004l
+danie
 Wed Aug 26 15:36:28 -03 2026
 /home/danie/Threads
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads -lpthread
+[?2004l
+gcc main.c -o threads -lpthread
 ./threads 1 1 1 1
 1.000000 1.000000 1 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clea[K[K[K[K[K[K[K[K[Kmake clean
-[?2004lrm -f threads; mandebrot_dsob_openmp.pgm; mandebrot_dsob_pthreads1.pgm; mandebrot_dsob_serial.pgm
+[?2004l
+rm -f threads; mandebrot_dsob_openmp.pgm; mandebrot_dsob_pthreads1.pgm; mandebrot_dsob_serial.pgm
 /bin/sh: 1: mandebrot_dsob_openmp.pgm: not found
 /bin/sh: 1: mandebrot_dsob_pthreads1.pgm: not found
 /bin/sh: 1: mandebrot_dsob_serial.pgm: not found
 make: *** [Makefile:11: clean] Error 127
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make cea[K[Klean
-[?2004lrm -f threads; mandelbrot_dsob_openmp.pgm; mandelbrot_dsob_pthreads1.pgm; mandelbrot_dsob_serial.pgm
+[?2004l
+rm -f threads; mandelbrot_dsob_openmp.pgm; mandelbrot_dsob_pthreads1.pgm; mandelbrot_dsob_serial.pgm
 /bin/sh: 1: mandelbrot_dsob_openmp.pgm: not found
 /bin/sh: 1: mandelbrot_dsob_pthreads1.pgm: not found
 /bin/sh: 1: mandelbrot_dsob_serial.pgm: not found
 make: *** [Makefile:11: clean] Error 127
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
-[?2004lrm -f threads; mandelbrot_dsob_openmp.pgm; mandelbrot_dsob_pthreads1.pgm; mandelbrot_dsob_serial.pgm
+[?2004l
+rm -f threads; mandelbrot_dsob_openmp.pgm; mandelbrot_dsob_pthreads1.pgm; mandelbrot_dsob_serial.pgm
 /bin/sh: 1: mandelbrot_dsob_openmp.pgm: not found
 /bin/sh: 1: mandelbrot_dsob_pthreads1.pgm: not found
 /bin/sh: 1: mandelbrot_dsob_serial.pgm: not found
 make: *** [Makefile:11: clean] Error 127
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
-[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+exit
 
 Script done on 2026-08-26 15:42:39-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-08-27 09:20:00-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami pwd [K[K[K[K[K[Ki; pwd; date
-[?2004ldanie
+[?2004l
+danie
 /home/danie/Threads
 Thu Aug 27 09:20:10 -03 2026
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads -lpthread
+[?2004l
+gcc main.c -o threads -lpthread
 [01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_serial[m[K’:
 [01m[Kmain.c:45:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kiter[m[K’ undeclared (first use in this function)
    45 |             matriz_iter[i * largura + y] = [01;31m[Kiter[m[K;
@@ -111,28 +150,36 @@ Thu Aug 27 09:20:10 -03 2026
       |                         [01;35m[Kint[m[K
 make: *** [Makefile:5: all] Error 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads -lpthread
+[?2004l
+gcc main.c -o threads -lpthread
 ./threads 1 1 1 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads -lpthread
+[?2004l
+gcc main.c -o threads -lpthread
 ./threads 800 800 1000 4
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc main.c -o threads -lpthread
+[?2004l
+gcc main.c -o threads -lpthread
 ./threads 800 800 1000 4
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
-[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clean[Kr
-[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004l
+exit
 
 Script done on 2026-08-27 09:26:27-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-09-01 17:09:09-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd[Kd; whoami; date
-[?2004l/home/danie/Threads
+[?2004l
+/home/danie/Threads
 danie
 Tue Sep  1 17:09:15 -03 2026
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o threads -lpthread
+[?2004l
+gcc -fopenmp main.c -o threads -lpthread
 ./threads 800 800 1000 4
 Teste da Thread 0 no 'momento' 0
 Teste da Thread 0 no 'momento' 0
@@ -235,34 +282,44 @@ Teste da Thread 2 no 'momento' 7
 Teste da Thread 2 no 'momento' 7
 Teste da Thread 2 no 'momento' 7
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clear
-[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
-[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004l
+[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+exit
 
 Script done on 2026-09-01 17:10:05-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-09-01 17:42:22-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami; pwd; date
-[?2004ldanie
+[?2004l
+danie
 /home/danie/Threads
 Tue Sep  1 17:42:26 -03 2026
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o threads -lpthread
+[?2004l
+gcc -fopenmp main.c -o threads -lpthread
 ./threads 800 800 1000 4
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ maek[K[Kke clean
-[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ clear
-[?2004l[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+[H[2J[3J[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004l
+exit
 
 Script done on 2026-09-01 17:44:53-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-09-02 09:53:10-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ whoami. pwd[K[K[K[K[K; pwd; date
-[?2004ldanie
+[?2004l
+danie
 /home/danie/Threads
 Wed Sep  2 09:53:15 -03 2026
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 [01m[Kmain.c:[m[K In function ‘[01m[Kprint_pthread1[m[K’:
 [01m[Kmain.c:38:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
    38 |         return [01;35m[K1[m[K;
@@ -325,7 +382,8 @@ Wed Sep  2 09:53:15 -03 2026
       |      [01;36m[K^~~~~~~~~~~~~~~[m[K
 make: *** [Makefile:6: all] Error 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 [01m[Kmain.c:[m[K In function ‘[01m[Kprint_pthread1[m[K’:
 [01m[Kmain.c:38:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with a value, in function returning void
    38 |         return [01;35m[K1[m[K;
@@ -353,7 +411,8 @@ make: *** [Makefile:6: all] Error 1
       |       [01;36m[K^~~~~~~~~~~~~~~~~[m[K
 make: *** [Makefile:6: all] Error 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 [01m[Kmain.c:[m[K In function ‘[01m[Kprocesso_pthread2[m[K’:
 [01m[Kmain.c:57:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kreturn[m[K’ with no value, in function returning non-void
    57 |         [01;35m[Kreturn[m[K;
@@ -375,39 +434,46 @@ Thread 134108637394624 Altura 800; largura 800; Maxima Iterações 1000
 double free or corruption (out)
 make: *** [Makefile:7: all] Aborted (core dumped)
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make[K[K[K[Kmake all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 ./mandelbrot 800 800 1000 4
 Thread 139259255297728 Altura 800; largura 800; Maxima Iterações 1000
 double free or corruption (out)
 Thread 139259246905024 Altura 800; largura 800; Maxima Iterações 1000
 make: *** [Makefile:7: all] Aborted (core dumped)
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 ./mandelbrot 800 800 1000 4
 Thread 126945800066752 Altura 800; largura 800; Maxima Iterações 1000
 double free or corruption (out)
 Thread 126945791674048 Altura 800; largura 800; Maxima Iterações 1000
 make: *** [Makefile:7: all] Aborted (core dumped)
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 ./mandelbrot 800 800 1000 4
 Thread 134524485867200 Altura 800; largura 800; Maxima Iterações 1000
 Thread 134524477474496 Altura 800; largura 800; Maxima Iterações 1000
 Thread 134524348397248 Altura 800; largura 800; Maxima Iterações 1000
 Thread 134524469081792 Altura 800; largura 800; Maxima Iterações 1000
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
-[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
-[?2004lexit
+[?2004l
+exit
 
 Script done on 2026-09-02 10:04:35-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-09-02 12:12:41-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="159" LINES="8"]
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd; whoami; date
-[?2004l/home/danie/Threads
+[?2004l
+/home/danie/Threads
 danie
 Wed Sep  2 12:12:45 -03 2026
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 [01m[Kmain.c:[m[K In function ‘[01m[Kajuste_thread2[m[K’:
 [01m[Kmain.c:100:5:[m[K [01;31m[Kerror: [m[Kunknown type name ‘[01m[Karg_print[m[K’; did you mean ‘[01m[Kargs_print[m[K’?
   100 |     [01;31m[Karg_print[m[K *a = (args_print *)arg;
@@ -454,11 +520,51 @@ Wed Sep  2 12:12:45 -03 2026
       |      [01;31m[K^~[m[K
 make: *** [Makefile:6: all] Error 1
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
-[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004l
+gcc -fopenmp main.c -o mandelbrot -lpthread
 ./mandelbrot 800 800 1000 4
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
+[?2004l
+rm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-09-02 12:17:02-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 21:22:48-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd;whoami;date
+[?2004l/home/danie/Threads
+danie
+Wed Sep  2 21:22:52 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make compile
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ ./mandelbrot teste naofloat 3 4
+[?2004lArgumento da Largura invalido[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ ./mandelbrot 3 naofloat 3 4
+[?2004lArgumento da Altura invalido[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make clean
 [?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
 [?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
 [?2004lexit
 
-Script done on 2026-09-02 12:17:02-03:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-09-02 21:24:17-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 22:07:31-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="8"]
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ pwd;wo[Khoami;date
+[?2004l/home/danie/Threads
+danie
+Wed Sep  2 22:07:38 -03 2026
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make compile
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ 3 4 ss 2
+[?2004l3: command not found
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ ./t[Kmandelbrot 3 4 ss 2
+[?2004lArgumento das Iterações Maximas invalido
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ ./mandelbrot 3 4 2 ss
+[?2004lArgumento de Threads invalido
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make all
+[?2004lgcc -fopenmp main.c -o mandelbrot -lpthread
+./mandelbrot 800 800 1000 4
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ make cea[K[Klean
+[?2004lrm -f threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandelbrot_dsob_pthreads2.pgm mandelbrot_dsob_serial.pgm timer.txt mandelbrot
+[?2004h]0;danie@SantoByul: ~/Threads[01;32mdanie@SantoByul[00m:[01;34m~/Threads[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 22:11:32-03:00 [COMMAND_EXIT_CODE="0"]
