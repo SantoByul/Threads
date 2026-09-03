@@ -13,6 +13,8 @@
 #define IMAG_MIN -1.5
 
 typedef struct{
+    long inicio;
+    long fim;
     long largura;
     long altura;
     long max_iter;
@@ -38,7 +40,7 @@ void *processo_pthread1(void *arg){
     long max_iter = a->max_iter;
     long *matriz_iter = a->matriz_iter;
 
-    for (long i=0; i<altura; i++){
+    for (long i=a->inicio; i<a->fim; i++){
         for(long y=0; y<largura; y++){
             float real = REAL_MIN + ((float)y / (float)largura) * (REAL_MAX - REAL_MIN);
             float imaginario = IMAG_MIN + ((float)i / (float)altura) * (IMAG_MAX - IMAG_MIN);
@@ -253,7 +255,6 @@ int main(int argc, char **argv){
         printf("Menos argumentos do que requisitado");
         return 1;
     }
-    args_pthread a1;
 
     float largura, altura;
     long max_iter, threads;
@@ -280,10 +281,17 @@ int main(int argc, char **argv){
         return 1;
     }
 
-    a1.largura = largura;
-    a1.altura = altura;
-    a1.max_iter = max_iter;
-    a1.matriz_iter = matriz_iter;
+    args_pthread a1[threads];
+    long linhas_por_thread1 = altura / threads;
+
+    for (int i = 0; i < threads; i++){
+        a1[i].inicio = i * linhas_por_thread1;
+        a1[i].fim = (i == threads - 1) ? altura : (i + 1) * linhas_por_thread1;
+        a1[i].largura = largura;
+        a1[i].altura = altura;
+        a1[i].max_iter = max_iter;
+        a1[i].matriz_iter = matriz_iter;
+    }
 
     pthread_t thread[threads];
     pthread_t thread2[threads];
@@ -292,12 +300,12 @@ int main(int argc, char **argv){
     processo_openmp(largura, altura, max_iter, threads, matriz_iter);
 
     for(int i=0; i<threads; i++){
-        pthread_create(&thread[i], NULL, processo_pthread1, &a1);
+        pthread_create(&thread[i], NULL, processo_pthread1, &a1[i]);
     }
     for(int i=0; i<threads; i++){
         pthread_join(thread[i], NULL);
     }
-
+    print_pthread1(matriz_iter, altura, largura, max_iter);
     matriz_iter = processo_pthread2(largura, altura, max_iter, matriz_iter);
 
     args_print a2[threads];

@@ -4,7 +4,7 @@ REMOVE = threads mandelbrot_dsob_openmp.pgm mandelbrot_dsob_pthreads1.pgm mandel
 
 all:
 	$(GCC) main.c -o mandelbrot -lpthread
-	./mandelbrot 800 800 1000 4
+	./mandelbrot 6 6 30 3
 
 compile:
 	$(GCC) main.c -o mandelbrot -lpthread
